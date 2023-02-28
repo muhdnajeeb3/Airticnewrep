@@ -8,7 +8,7 @@ import Logo from '../images/LOGO.png'
 function NavBar() {
   return (
     <>
-    <Navbar bg="" expand="lg" style={{position:"relative",minHeight:"5rem",marginLeft:"80px",zIndex:"1111"}}>
+    <Navbar bg="" expand="lg" style={{position:"relative",minHeight:"5rem",marginLeft:"50px",zIndex:"1111"}}>
       <Container>
         <Navbar.Brand href="#home" style={{display:"flex",justifyContent:"flex-start"}}>
             <Image src={Logo} alt="Logo"  style={{width:"166px",height:"52px"}}/>

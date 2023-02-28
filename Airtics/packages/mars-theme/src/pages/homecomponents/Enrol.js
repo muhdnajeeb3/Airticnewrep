@@ -1,13 +1,50 @@
 import { styled } from "frontity";
-import React from "react";
+import React,{useState} from "react";
 import { Col, Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import enrol from "../images/enrol2.png";
 import Companies from "./Companies";
+import Enquiry from "./Enquiry";
 
 function Enrol() {
+
+  const [open, setOpen] = useState(true)
+  const [open1, setOpen1] = useState(false)
+  const [open2, setOpen2] = useState(false)
+  const [open3, setOpen3] = useState(false)
+  const [open4, setOpen4] = useState(false)
+  const [open5, setOpen5] = useState(false)
+  const [open6, setOpen6] = useState(false)
+  const onToggle = event => {
+  event.preventDefault();
+  setOpen(!open);
+};
+const onToggle1 = event => {
+  event.preventDefault();
+  setOpen1(!open1);
+};
+const onToggle2 = event => {
+  event.preventDefault();
+  setOpen2(!open2);
+};
+const onToggle3 = event => {
+  event.preventDefault();
+  setOpen3(!open3);
+};
+const onToggle4 = event => {
+  event.preventDefault();
+  setOpen4(!open4);
+};const onToggle5 = event => {
+  event.preventDefault();
+  setOpen5(!open5);
+};const onToggle6 = event => {
+  event.preventDefault();
+  setOpen6(!open6);
+};
+
+
   return (
-    <Container fluid>
+    <Wrapper fluid>
       <Row>
         <Cols>
           <Row1>
@@ -21,16 +58,16 @@ function Enrol() {
           <Row2>
             <Row3>
               <Row4>
-                <Details open>
-                  <Summary>Remain competitive and employable</Summary>
-                  <P>
+                <Details open={open} onClick={onToggle}>
+                  <Summary >Remain competitive and employable</Summary>
+                  <P className="details-content">
                     Set yourself apart from your competitors by receiving
                     advanced training in your field.
                   </P>
                 </Details>
               </Row4>
               <Row4>
-                <Details>
+                <Details open={open1} onClick={onToggle1}>
                   <Summary>Gain job proficiency more quickly</Summary>
                   <P>
                     Set yourself apart from your competitors by receiving
@@ -39,7 +76,7 @@ function Enrol() {
                 </Details>
               </Row4>
               <Row4>
-                <Details>
+                <Details open={open2} onClick={onToggle2}>
                   <Summary>Gain networking possibilities</Summary>
                   <P>
                     Set yourself apart from your competitors by receiving
@@ -49,7 +86,7 @@ function Enrol() {
               </Row4>
 
               <Row4>
-                <Details>
+                <Details open={open3} onClick={onToggle3}>
                   <Summary>Keep your skills up-to-date</Summary>
                   <P>
                     Set yourself apart from your competitors by receiving
@@ -58,7 +95,7 @@ function Enrol() {
                 </Details>
               </Row4>
               <Row4>
-                <Details>
+                <Details open={open4} onClick={onToggle4}>
                   <Summary>Enhance professional credibility</Summary>
                   <P>
                     Set yourself apart from your competitors by receiving
@@ -67,7 +104,7 @@ function Enrol() {
                 </Details>
               </Row4>
               <Row4>
-                <Details>
+                <Details open={open5} onClick={onToggle5}>
                   <Summary>Earning more right from the start</Summary>
                   <P>
                     Set yourself apart from your competitors by receiving
@@ -76,7 +113,7 @@ function Enrol() {
                 </Details>
               </Row4>
               <Row4>
-                <Details>
+                <Details open={open6} onClick={onToggle6}>
                   <Summary>Remain competitive and employable</Summary>
                   <P>
                     Set yourself apart from your competitors by receiving
@@ -93,12 +130,17 @@ function Enrol() {
           </Div>
         </Col>
       </Row>
+      <Enquiry />
       <Companies />
-    </Container>
+    </Wrapper>
   );
 }
 
 export default Enrol;
+
+const Wrapper =styled(Container)`
+// position:relative;
+`;
 
 const SPAN = styled.span`
   // width:213px;
@@ -138,7 +180,8 @@ const Row1 = styled(Row)`
 `;
 const Row2 = styled(Row)`
   width: 593px;
-  margin-top: 3rem;
+  min-height: 539px;
+  margin-top: 4.2rem;
   border-top: 8px solid #fcaf17;
   margin-left: 6rem;
   @media (max-width: 720px) {
@@ -182,7 +225,8 @@ const Details = styled.details`
   margin-top: 25px;
   margin-bottom: 25px;
   /* or 171% */
-
+  transition: transform 5.3s ease-in-out;
+  animation: slowmation 18s infinite;
   details summary::-webkit-details-marker {
     display: none;
   }
@@ -197,9 +241,9 @@ const Details = styled.details`
     transform: ${(props) => (props.open ? "rotate(-45deg)" : "rotate(135deg)")};
     transition: transform 0.3s ease-in-out;
   }
-  details[open]summary:after {
-    // transform: rotate(-45deg);
-  }
+  details[open] > summary::after {
+  transform: rotate(-40deg);
+}
   summary {
     list-style: none;
     display:flex;
@@ -212,6 +256,8 @@ const Details = styled.details`
   }
 
   color: #303030;
+
+  
 `;
 const Summary = styled.summary`
   font-family: "Metropolis";
@@ -249,4 +295,8 @@ const Cols = styled(Col)`
 `;
 const P = styled.p`
 margin-top:20px;
+
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+
 `;

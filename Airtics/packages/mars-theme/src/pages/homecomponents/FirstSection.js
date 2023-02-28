@@ -145,7 +145,7 @@ function FirstSection() {
               <SPAN>
                 Upgrade your <span style={{ color: "#FCAF17" }}>Skills</span>
                 <br /> in the industry of the
-                <br /> Future
+                 Future
               </SPAN>
             </Row>
             <Row>
@@ -158,26 +158,17 @@ function FirstSection() {
               style={{
                 display: "flex",
                 justifyItems: "center",
-                gap: "",
-                // marginLeft: "6.5rem",
                 marginTop: "5%",
-                position: "",
               }}
             >
-              <Col
-                style={{
-                  width: "100%",
-                  display: "flex",
-                  justifyItems: "center",
-                  gap: "50px",
-                }}
+              <Col1
               >
                 <Button
                   variant="dark"
                   style={{
                     borderRadius: "0",
                     color: "#FCAF17",
-                    // width: "115px",
+                    width: "168px",
                     minHeight: "68px",
                     fontFamily: "mons",
                     marginTop: "20px",
@@ -197,7 +188,7 @@ function FirstSection() {
                   <img src={play} alt="" />
                   <Word>How it Works</Word>
                 </Col>
-              </Col>
+              </Col1>
             </Div3>
           </Col>
           <Col>
@@ -370,12 +361,23 @@ const Firstsectionwrapper = styled.div`
   border-radius: 0px;
   //   position:relative;
 `;
-const Div3 = styled.div`
-  margin-left: 8rem;
+const Col1 = styled(Col)`
 
-  @media (max-width: 650px) {
-    margin-left: 3.5rem;
-  }
+  width: 100%;
+  display: flex;
+  justifyItems: center;
+  gap:50px;
+  @media (max-width: 480px) {
+  flex-direction:column;
+    
+     }
+}}
+`;
+const Div3 = styled.div`
+  margin-left: 6.7rem;
+  @media (max-width: 560px) {
+   margin-left:4rem;
+    }
 `;
 // images
 
@@ -415,10 +417,10 @@ const Word = styled.p`
 
 const Paragraph = styled.p`
   height: 96px;
-  width: 562px;
+  width: 592px;
   // left: 117px;
   // top: 521px;
-  padding-left: 8.7rem;
+  padding-left: 6.8rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-radius: null;
@@ -454,7 +456,7 @@ const SPAN = styled.span`
   //   margin-bottom:50px;
 
   // border-radius: null;
-  padding-left: 8.5rem;
+  padding-left: 6.7rem;
   padding-top: 3rem;
 
   font-family: "Metropolis";

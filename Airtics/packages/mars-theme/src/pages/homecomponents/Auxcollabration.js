@@ -79,6 +79,8 @@ const Div1 =styled.div`
 position:absolute;
 top:0;
 right:0;
+width:96px;
+
 // bottom:0;
 
 `;
