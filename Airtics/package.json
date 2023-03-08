@@ -1,5 +1,6 @@
 {
   "name": "airtics",
+  "homepage": "https://react.schneideit.com",
   "version": "1.0.0",
   "private": true,
   "description": "Frontity project",
@@ -25,6 +26,7 @@
     "bootstrap": "^5.2.3",
     "frontity": "^1.17.2",
     "react-bootstrap": "^2.7.2",
+    "react-player": "^2.11.2",
     "react-slick": "^0.29.0"
   }
 }

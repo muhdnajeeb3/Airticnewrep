@@ -68,6 +68,7 @@ export default connect(Theme);
 const globalStyles = css`
   body {
     margin: 0;
+    padding:0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -84,6 +85,8 @@ const HeadContainer = styled.div`
   // align-items: center;
   // flex-direction: column;
   // background-color: #1f38c5;
+  // width: 1439px;
+
 `;
 
 const Main = styled.div`

@@ -1,0 +1,34 @@
+{
+  "name": "airtics",
+  "homepage": "https://react.schneideit.com",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontity project",
+  "keywords": [
+    "frontity"
+  ],
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "dev": "frontity dev",
+    "build": "frontity build",
+    "serve": "frontity serve"
+  },
+  "prettier": {},
+  "dependencies": {
+    "@frontity/core": "^1.16.0",
+    "@frontity/html2react": "^1.7.0",
+    "@frontity/mars-theme": "./packages/mars-theme",
+    "@frontity/tiny-router": "^1.4.4",
+    "@frontity/wp-source": "^1.11.7",
+    "bootstrap": "^5.2.3",
+    "frontity": "^1.17.2",
+    "react-bootstrap": "^2.7.2",
+    "react-phone-number-input": "^3.2.19",
+    "react-player": "^2.11.2",
+    "react-router-dom": "^6.8.2",
+    "react-slick": "^0.29.0"
+  }
+}
