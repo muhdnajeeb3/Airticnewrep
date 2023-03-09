@@ -33,7 +33,7 @@ function CourseModules() {
         <Row3>
           <Button1
             variant="warning"
-            moduleone={moduleOne}
+            moduleone={moduleOne ? 1 : 0}
             onClick={() => setModuleOne(!moduleOne)}
           >
             Module 1
@@ -43,20 +43,20 @@ function CourseModules() {
               <SPAN3>Core Python </SPAN3>
             </Div>
             <Div1>
-              <Image moduleone={moduleOne} src={arrow} alt="" />
+              <Image moduleone={moduleOne ? 1 : 0} src={arrow} alt="" />
             </Div1>
           </Row4>
           {moduleOne ? (
             <>
-              <Row5 moduleone={moduleOne}>
+              <Row5 moduleone={moduleOne ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>basics, conditional statements, loops</SPAN4>
               </Row5>
-              <Row5 moduleone={moduleOne}>
+              <Row5 moduleone={moduleOne ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>lists, tuples, dictionaries, sets</SPAN4>
               </Row5>
-              <Row5 moduleone={moduleOne}>
+              <Row5 moduleone={moduleOne ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>functions, classes</SPAN4>
               </Row5>
@@ -68,7 +68,7 @@ function CourseModules() {
         <Row3>
           <Button1
             variant="warning"
-            moduleone={moduleTwo}
+            moduleone={moduleTwo  ? 1 : 0}
             onClick={() => setModuleTwo(!moduleTwo)}
           >
             Module 2
@@ -78,20 +78,20 @@ function CourseModules() {
               <SPAN3>Python for data science </SPAN3>
             </Div>
             <Div1>
-              <Image moduleone={moduleTwo} src={arrow} alt="" />
+              <Image moduleone={moduleTwo  ? 1 : 0} src={arrow} alt="" />
             </Div1>
           </Row4>
           {moduleTwo ? (
             <>
-              <Row5 moduleone={moduleTwo}>
+              <Row5 moduleone={moduleTwo  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>basics, conditional statements, loops</SPAN4>
               </Row5>
-              <Row5 moduleone={moduleTwo}>
+              <Row5 moduleone={moduleTwo  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>lists, tuples, dictionaries, sets</SPAN4>
               </Row5>
-              <Row5 moduleone={moduleTwo}>
+              <Row5 moduleone={moduleTwo  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>functions, classes</SPAN4>
               </Row5>
@@ -103,7 +103,7 @@ function CourseModules() {
         <Row3>
           <Button1
             variant="warning"
-            moduleone={moduleThree}
+            moduleone={moduleThree  ? 1 : 0}
             onClick={() => setModuleThree(!moduleThree)}
           >
             Module 3
@@ -113,20 +113,20 @@ function CourseModules() {
               <SPAN3>Probability and statistics </SPAN3>
             </Div>
             <Div1>
-              <Image moduleone={moduleThree} src={arrow} alt="" />
+              <Image moduleone={moduleThree  ? 1 : 0} src={arrow} alt="" />
             </Div1>
           </Row4>
           {moduleThree ? (
             <>
-              <Row5 moduleone={moduleThree}>
+              <Row5 moduleone={moduleThree  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>basics, conditional statements, loops</SPAN4>
               </Row5>
-              <Row5 moduleone={moduleThree}>
+              <Row5 moduleone={moduleThree  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>lists, tuples, dictionaries, sets</SPAN4>
               </Row5>
-              <Row5 moduleone={moduleThree}>
+              <Row5 moduleone={moduleThree  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>functions, classes</SPAN4>
               </Row5>
@@ -138,7 +138,7 @@ function CourseModules() {
         <Row3>
           <Button1
             variant="warning"
-            moduleone={moduleFour}
+            moduleone={moduleFour  ? 1 : 0}
             onClick={() => setModuleFour(!moduleFour)}
           >
             Module 4
@@ -148,20 +148,20 @@ function CourseModules() {
               <SPAN3>Data cleaning and preprocessing</SPAN3>
             </Div>
             <Div1>
-              <Image moduleone={moduleFour} src={arrow} alt="" />
+              <Image moduleone={moduleFour  ? 1 : 0} src={arrow} alt="" />
             </Div1>
           </Row4>
           {moduleFour ? (
             <>
-              <Row5 moduleone={moduleFour}>
+              <Row5 moduleone={moduleFour  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>basics, conditional statements, loops</SPAN4>
               </Row5>
-              <Row5 moduleone={moduleFour}>
+              <Row5 moduleone={moduleFour  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>lists, tuples, dictionaries, sets</SPAN4>
               </Row5>
-              <Row5 moduleone={moduleFour}>
+              <Row5 moduleone={moduleFour  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>functions, classes</SPAN4>
               </Row5>
@@ -173,7 +173,7 @@ function CourseModules() {
         <Row3>
           <Button1
             variant="warning"
-            moduleone={moduleFive}
+            moduleone={moduleFive  ? 1 : 0}
             onClick={() => setModuleFive(!moduleFive)}
           >
             Module 5
@@ -183,20 +183,20 @@ function CourseModules() {
               <SPAN3>Introduction to machine learning</SPAN3>
             </Div>
             <Div1>
-              <Image moduleone={moduleFive} src={arrow} alt="" />
+              <Image moduleone={moduleFive  ? 1 : 0} src={arrow} alt="" />
             </Div1>
           </Row4>
           {moduleFive ? (
             <>
-              <Row5 moduleone={moduleFive}>
+              <Row5 moduleone={moduleFive  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>basics, conditional statements, loops</SPAN4>
               </Row5>
-              <Row5 moduleone={moduleFive}>
+              <Row5 moduleone={moduleFive  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>lists, tuples, dictionaries, sets</SPAN4>
               </Row5>
-              <Row5 moduleone={moduleFive}>
+              <Row5 moduleone={moduleFive  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>functions, classes</SPAN4>
               </Row5>
@@ -208,7 +208,7 @@ function CourseModules() {
         <Row3>
           <Button1
             variant="warning"
-            moduleone={moduleSix}
+            moduleone={moduleSix  ? 1 : 0}
             onClick={() => setModuleSix(!moduleSix)}
           >
             Module 6
@@ -218,20 +218,20 @@ function CourseModules() {
               <SPAN3>Unsupervised Machine learning </SPAN3>
             </Div>
             <Div1>
-              <Image moduleone={moduleSix} src={arrow} alt="" />
+              <Image moduleone={moduleSix  ? 1 : 0} src={arrow} alt="" />
             </Div1>
           </Row4>
           {moduleSix ? (
             <>
-              <Row5 moduleone={moduleSix}>
+              <Row5 moduleone={moduleSix  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>basics, conditional statements, loops</SPAN4>
               </Row5>
-              <Row5 moduleone={moduleSix}>
+              <Row5 moduleone={moduleSix  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>lists, tuples, dictionaries, sets</SPAN4>
               </Row5>
-              <Row5 moduleone={moduleSix}>
+              <Row5 moduleone={moduleSix  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>functions, classes</SPAN4>
               </Row5>
@@ -243,7 +243,7 @@ function CourseModules() {
         <Row3>
           <Button1
             variant="warning"
-            moduleone={moduleSeven}
+            moduleone={moduleSeven  ? 1 : 0}
             onClick={() => setModuleSeven(!moduleSeven)}
           >
             Module 7
@@ -253,20 +253,20 @@ function CourseModules() {
               <SPAN3>ML Deployment</SPAN3>
             </Div>
             <Div1>
-              <Image src={arrow} alt="" />
+              <Image moduleone={moduleSeven  ? 1 : 0} src={arrow} alt="" />
             </Div1>
           </Row4>
           {moduleSeven ? (
             <>
-              <Row5 moduleone={moduleSeven}>
+              <Row5 moduleone={moduleSeven  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>basics, conditional statements, loops</SPAN4>
               </Row5>
-              <Row5 moduleone={moduleSeven}>
+              <Row5 moduleone={moduleSeven  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>lists, tuples, dictionaries, sets</SPAN4>
               </Row5>
-              <Row5 moduleone={moduleSeven}>
+              <Row5 moduleone={moduleSeven  ? 1 : 0}>
                 <Image1 src={arr1} alt="" />
                 <SPAN4>functions, classes</SPAN4>
               </Row5>

@@ -2,6 +2,7 @@ import React from 'react'
 import AboutAux from './AboutAux'
 import CareerSupport from './CareerSupport';
 import CourseModules from './CourseModules';
+import Questions from './Questions';
 import Skills from './Skills';
 import StudentReview from './StudentReview';
 
@@ -13,6 +14,7 @@ function MainSection() {
     <CourseModules />
     <StudentReview />
     <CareerSupport />
+    <Questions />
 
     </>
   )

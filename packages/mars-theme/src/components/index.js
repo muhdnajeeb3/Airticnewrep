@@ -48,8 +48,8 @@ const Theme = ({ state }) => {
       {/* Add the header of the site. */}
       <HeadContainer>
         {/* <Header /> */}
-        {/* <HomeScreen /> */}
-        <CourseScreens />
+        <HomeScreen />
+        {/* <CourseScreens /> */}
         
       </HeadContainer>
 

@@ -1,46 +1,22 @@
 import { styled } from "frontity";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Col, Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import enrol from "../images/enrol2.png";
 import Companies from "./Companies";
 import Enquiry from "./Enquiry";
+import v from "../courseimages/v.png";
 
 function Enrol() {
+  const [open, setOpen] = useState({});
 
-  const [open, setOpen] = useState(true)
-  const [open1, setOpen1] = useState(false)
-  const [open2, setOpen2] = useState(false)
-  const [open3, setOpen3] = useState(false)
-  const [open4, setOpen4] = useState(false)
-  const [open5, setOpen5] = useState(false)
-  const [open6, setOpen6] = useState(false)
-  const onToggle = event => {
-  event.preventDefault();
-  setOpen(!open);
-};
-const onToggle1 = event => {
-  event.preventDefault();
-  setOpen1(!open1);
-};
-const onToggle2 = event => {
-  event.preventDefault();
-  setOpen2(!open2);
-};
-const onToggle3 = event => {
-  event.preventDefault();
-  setOpen3(!open3);
-};
-const onToggle4 = event => {
-  event.preventDefault();
-  setOpen4(!open4);
-};const onToggle5 = event => {
-  event.preventDefault();
-  setOpen5(!open5);
-};const onToggle6 = event => {
-  event.preventDefault();
-  setOpen6(!open6);
-};
+  const onToggle = (id) => {
+    setOpen((prevState) => ({
+      ...prevState,
+      [id]: !prevState[id],
+    }));
+  };
+  
 
 
   return (
@@ -58,8 +34,13 @@ const onToggle4 = event => {
           <Row2>
             <Row3>
               <Row4>
-                <Details open={open} onClick={onToggle}>
-                  <Summary >Remain competitive and employable</Summary>
+                <Details  onClick={() => onToggle(1)}>
+                  <Summary>
+                    <span>Remain competitive and employable</span>
+                    <Div1 rotated={open[1]}>
+                      <img src={v} alt="" />
+                    </Div1>
+                  </Summary>
                   <P className="details-content">
                     Set yourself apart from your competitors by receiving
                     advanced training in your field.
@@ -67,8 +48,13 @@ const onToggle4 = event => {
                 </Details>
               </Row4>
               <Row4>
-                <Details open={open1} onClick={onToggle1}>
-                  <Summary>Gain job proficiency more quickly</Summary>
+                <Details  onClick={() => onToggle(2)}>
+                  <Summary>
+                    <span>Gain job proficiency more quickly</span>
+                    <Div1 rotated={open[2]}>
+                      <img src={v} alt="" />
+                    </Div1>
+                  </Summary>
                   <P>
                     Set yourself apart from your competitors by receiving
                     advanced training in your field.
@@ -76,8 +62,13 @@ const onToggle4 = event => {
                 </Details>
               </Row4>
               <Row4>
-                <Details open={open2} onClick={onToggle2}>
-                  <Summary>Gain networking possibilities</Summary>
+                <Details  onClick={() => onToggle(3)}>
+                  <Summary>
+                    <span>Gain networking possibilities</span>
+                    <Div1 rotated={open[3]}>
+                      <img src={v} alt="" />
+                    </Div1>
+                  </Summary>
                   <P>
                     Set yourself apart from your competitors by receiving
                     advanced training in your field.
@@ -86,8 +77,13 @@ const onToggle4 = event => {
               </Row4>
 
               <Row4>
-                <Details open={open3} onClick={onToggle3}>
-                  <Summary>Keep your skills up-to-date</Summary>
+                <Details  onClick={() => onToggle(4)}>
+                  <Summary>
+                    <span>Keep your skills up-to-date</span>
+                    <Div1 rotated={open[4]}>
+                      <img src={v} alt="" />
+                    </Div1>
+                  </Summary>
                   <P>
                     Set yourself apart from your competitors by receiving
                     advanced training in your field.
@@ -95,8 +91,13 @@ const onToggle4 = event => {
                 </Details>
               </Row4>
               <Row4>
-                <Details open={open4} onClick={onToggle4}>
-                  <Summary>Enhance professional credibility</Summary>
+                <Details  onClick={() => onToggle(5)}>
+                  <Summary>
+                    <span>Enhance professional credibility</span>
+                    <Div1 rotated={open[5]}>
+                      <img src={v} alt="" />
+                    </Div1>
+                  </Summary>
                   <P>
                     Set yourself apart from your competitors by receiving
                     advanced training in your field.
@@ -104,8 +105,13 @@ const onToggle4 = event => {
                 </Details>
               </Row4>
               <Row4>
-                <Details open={open5} onClick={onToggle5}>
-                  <Summary>Earning more right from the start</Summary>
+                <Details  onClick={() => onToggle(6)}>
+                  <Summary>
+                    <span>Earning more right from the start</span>
+                    <Div1 rotated={open[6]}>
+                      <img src={v} alt="" />
+                    </Div1>
+                  </Summary>
                   <P>
                     Set yourself apart from your competitors by receiving
                     advanced training in your field.
@@ -113,8 +119,13 @@ const onToggle4 = event => {
                 </Details>
               </Row4>
               <Row4>
-                <Details open={open6} onClick={onToggle6}>
-                  <Summary>Remain competitive and employable</Summary>
+                <Details  onClick={() => onToggle(7)}>
+                  <Summary>
+                    <span>Remain competitive and employable</span>
+                    <Div1 rotated={open[7]}>
+                      <img src={v} alt="" />
+                    </Div1>
+                  </Summary>
                   <P>
                     Set yourself apart from your competitors by receiving
                     advanced training in your field.
@@ -138,9 +149,9 @@ const onToggle4 = event => {
 
 export default Enrol;
 
-const Wrapper =styled(Container)`
-// position:relative;
-margin-top:3rem;
+const Wrapper = styled(Container)`
+  // position:relative;
+  margin-top: 3rem;
 `;
 
 const SPAN = styled.span`
@@ -231,48 +242,41 @@ const Details = styled.details`
   details summary::-webkit-details-marker {
     display: none;
   }
-  summary::after {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin-left: 15rem;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    transform: ${(props) => (props.open ? "rotate(-45deg)" : "rotate(135deg)")};
-    transition: transform 0.3s ease-in-out;
-    @media(max-width:650px){
-    margin-left: 18rem;
-    position: relative;
-    top: -26px;
-      
-  
-      }
-      @media(max-width:380px){
-        margin-left: 14.5rem;
-        position: relative;
-        top: -26px;
-          
-      
-          }
-  }
-  details[open] > summary::after {
-  transform: rotate(-40deg);
-}
-  summary {
-    list-style: none;
-    display:flex;
-    justify-content:space-between;
-    @media(max-width:650px){
-    display:block;
-    justify-content:auto;
-
-    }
-  }
+  // summary::after {
+  //   content: "";
+  //   display: inline-block;
+  //   width: 10px;
+  //   height: 10px;
+  //   margin-left: 15rem;
+  //   border-top: 2px solid black;
+  //   border-right: 2px solid black;
+  //   transform: ${(props) => (props.open ? "rotate(-45deg)" : "rotate(135deg)")};
+  //   transition: transform 0.3s ease-in-out;
+  //   @media (max-width: 650px) {
+  //     margin-left: 18rem;
+  //     position: relative;
+  //     top: -26px;
+  //   }
+  //   @media (max-width: 380px) {
+  //     margin-left: 14.5rem;
+  //     position: relative;
+  //     top: -26px;
+  //   }
+  // }
+  // details[open] > summary::after {
+  //   transform: rotate(-40deg);
+  // }
+  // summary {
+  //   list-style: none;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   @media (max-width: 650px) {
+  //     display: block;
+  //     justify-content: auto;
+  //   }
+  // }
 
   color: #303030;
-
-  
 `;
 const Summary = styled.summary`
   font-family: "Metropolis";
@@ -281,7 +285,10 @@ const Summary = styled.summary`
   font-size: 16px;
   line-height: 24px;
   /* identical to box height, or 150% */
-
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  padding-top: 10px;
   color: #303030;
 `;
 const Image = styled.img`
@@ -303,15 +310,17 @@ const Div = styled.div`
     margin-top: 5rem;
   }
 `;
+const Div1 = styled.div`
+  transform: ${(props) => (props.rotated ? "rotate(-180deg)" : "")};
+`;
 const Cols = styled(Col)`
   @media (max-width: 720px) {
     padding: 2rem;
   }
 `;
 const P = styled.p`
-margin-top:20px;
+  margin-top: 20px;
 
   transition: max-height 0.3s ease-out;
   overflow: hidden;
-
 `;

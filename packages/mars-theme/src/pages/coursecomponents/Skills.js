@@ -291,12 +291,15 @@ const Row3 = styled(Row)`
   top: -26%;
   display: flex;
   flex-wrap: wrap;
-  padding: 30px;
+
   @media (max-width: 750px) {
     flex-direction: column;
   }
   @media (max-width: 850px) {
     position: relative;
+  }
+  @media(max-width:480px){
+    width:95%;
   }
 `;
 const Row4 = styled(Row)``;
@@ -304,6 +307,7 @@ const Row5 = styled(Row)`
   width: 83%;
   margin-left: auto;
   margin-right: auto;
+
 `;
 const Row6 = styled(Row)`
   width: 83%;
@@ -315,12 +319,20 @@ const Row6 = styled(Row)`
     display: flex;
     flex-direction: column;
   }
+  // @media(max-width:480px){
+  //   width:100%;
+  // }
 `;
 const Row7 = styled(Row)`
   width: 83%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 6rem;
+  @media(max-width:480px){
+    width:100%;
+    display: flex;
+    justify-content: center;
+  }
 `;
 const Row8 = styled(Row)`
   background: #36374d;
@@ -353,6 +365,11 @@ const Row10 = styled(Row)`
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  @media(max-width:480px){
+    max-width:100%;
+    display: flex;
+    justify-content: center;
+  }
 `;
 const Col1 = styled(Col)`
   min-width: 221.13px;
@@ -369,6 +386,7 @@ const Col1 = styled(Col)`
 const Col2 = styled(Col)`
   border-right: 3px solid #fcaf17;
   flex: 2;
+  padding: 26px 22px 0;
 `;
 const Col3 = styled(Col)`
   flex: 1;

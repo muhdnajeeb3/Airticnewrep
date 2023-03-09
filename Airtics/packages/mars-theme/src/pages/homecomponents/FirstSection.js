@@ -23,7 +23,6 @@ import KeyFeatures from "./KeyFeatures";
 import Enrol from "./Enrol";
 import DemoClass from "./DemoClass";
 
-
 function FirstSection() {
   // const mobile = innerWidth <750;
 
@@ -144,8 +143,7 @@ function FirstSection() {
             <Row>
               <SPAN>
                 Upgrade your <span style={{ color: "#FCAF17" }}>Skills</span>
-                <br /> in the industry of the
-                 Future
+                <br /> in the industry of the Future
               </SPAN>
             </Row>
             <Row>
@@ -154,11 +152,8 @@ function FirstSection() {
                 update your skills and prepare for your next opportunity.
               </Paragraph>
             </Row>
-            <Div3
-              
-            >
-              <Col1
-              >
+            <Div3>
+              <Col1>
                 <Button
                   variant="dark"
                   style={{
@@ -195,11 +190,7 @@ function FirstSection() {
                 overflow: "hidden",
               }}
             >
-              <Images
-                src={img1}
-                alt=""
-                
-              />
+              <Images src={img1} alt="" />
             </div>
           </Col>
         </RowWrapper>
@@ -213,19 +204,17 @@ function FirstSection() {
             marginTop: "15rem",
             position: "relative",
             justifyContent: "center",
-            
           }}
         >
           {/* arranging to top */}
-          <Div5
-          >
+          <Div5>
             <Col style={{ padding: "30px" }}>
               <Row
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
                   gap: "-150px",
-                  margin:"10px"
+                  margin: "10px",
                 }}
               >
                 <Col>
@@ -243,7 +232,7 @@ function FirstSection() {
               </Row>
             </Col>
             <Col style={{ display: "flex" }}>
-              <Col3 >
+              <Col3>
                 <Bold>35</Bold>
                 <SPAN3>Online Courses</SPAN3>
               </Col3>
@@ -253,7 +242,7 @@ function FirstSection() {
                 <SPAN3>Students</SPAN3>
               </Col3>
               <Divider1 />
-              <Col3 >
+              <Col3>
                 <Bold>
                   4.5 <img src={rating} alt="" />
                 </Bold>
@@ -262,37 +251,36 @@ function FirstSection() {
             </Col>
           </Div5>
           {/* motivation */}
-          <Row1 >
-          <Col2
-          >
-            <Div4>
-              <img src={m1} alt="" />
-            </Div4>
-            <SPAN2>
-              We'll define, <strong>You'll LEARN</strong>{" "}
-            </SPAN2>
-          </Col2>
-          <Divider></Divider>
-          <Col2 >
-            {/* <Row> */}
+          <Row1>
+            <Col2>
+              <Div4>
+                <img src={m1} alt="" />
+              </Div4>
+              <SPAN2>
+                We'll define, <strong>You'll LEARN</strong>{" "}
+              </SPAN2>
+            </Col2>
+            <Divider></Divider>
+            <Col2>
+              {/* <Row> */}
               <Div4>
                 <img src={m2} alt="" />
               </Div4>
               <SPAN2>
                 We'll exhibit, <strong>you'll REMEMBER</strong>{" "}
               </SPAN2>
-            {/* </Row> */}
-          </Col2>
-          <Divider></Divider>
+              {/* </Row> */}
+            </Col2>
+            <Divider></Divider>
 
-          <Col2>
-            <Div4>
-              <img src={m3} alt="" />
-            </Div4>
-            <SPAN2>
-              We'll motivate <strong> you'll PERFORM</strong>{" "}
-            </SPAN2>
-          </Col2>
+            <Col2>
+              <Div4>
+                <img src={m3} alt="" />
+              </Div4>
+              <SPAN2>
+                We'll motivate <strong> you'll PERFORM</strong>{" "}
+              </SPAN2>
+            </Col2>
           </Row1>
         </Row>
       </div>
@@ -335,45 +323,46 @@ const Firstsectionwrapper = styled.div`
   border-radius: 0px;
   //   position:relative;
 `;
-const RowWrapper =styled(Row)`
-
-@media (max-width: 1024px) {
-      margin-top:5rem;
-     }
+const RowWrapper = styled(Row)`
+  @media (max-width: 1024px) {
+    margin-top: 5rem;
+  }
 `;
-const Row1 =styled(Row)`
-width:1189px;
-@media (max-width: 480px) {
-  display:flex;
-  flex-direction:column;
-  margin-bottom:5rem;
-
-    
-     }
+const Row1 = styled(Row)`
+  width: 1189px;
+  padding-bottom:20px;
+  @media (max-width: 680px) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
 `;
 const Col1 = styled(Col)`
-
   width: 100%;
   display: flex;
-  justifyItems: center;
-  gap:50px;
+  justify-items: center;
+  gap: 50px;
   @media (max-width: 480px) {
-  flex-direction:column;
-  gap:10px;
-    
-     }
-
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 const Col2 = styled(Col)`
-display:flex;
-justify-content:center;
-
+  display: flex;
+  justify-content: center;
+  @media (max-width: 680px) {
+    padding-bottom:3rem;
+  }
 `;
 const Col3 = styled(Col)`
-display:grid;
-justify-content:center;
-padding:35px 10px;
-
+  display: grid;
+  justify-content: center;
+  padding: 35px 10px;
 `;
 const Div3 = styled.div`
   margin-left: 6.7rem;
@@ -381,27 +370,26 @@ const Div3 = styled.div`
   justify-items: center;
   margin-top: 5%;
   @media (max-width: 560px) {
-   margin-left:4rem;
-    }
+    margin-left: 4rem;
+  }
 `;
 // images
 
 const Images = styled.img`
-  width:764px;
+  width: 764px;
   max-width: "100%";
   object-fit: contain;
   z-index: 12;
   opacity: 1;
 
   @media (max-width: 560px) {
-  width:100%;
+    width: 100%;
   }
 `;
 
 const StudentImage = styled.img`
   width: 120px;
   height: 104px;
-
 `;
 const Word = styled.p`
   position: relative;
@@ -476,7 +464,6 @@ const SPAN2 = styled.span`
   font-size: 18px;
   line-height: 28px;
   margin-top: 10rem;
-
 `;
 const SPAN3 = styled.span`
   font-family: "Metropolis";
@@ -487,15 +474,13 @@ const SPAN3 = styled.span`
 `;
 
 const Divider = styled.div`
-  width: 10px; 
+  width: 10px;
   border-right: 2px solid black;
   height: 30%;
   margin-top: 150px;
 
   @media (max-width: 500px) {
-
-    display:none;
-
+    display: none;
   }
 `;
 const Divider1 = styled.div`
@@ -517,26 +502,23 @@ const Div4 = styled.div`
   margin-top: 9rem;
 `;
 const Div5 = styled.div`
-  display:flex;
-  position:absolute;
-  width:1187px;        
-  over-flow:hidden;
+  display: flex;
+  position: absolute;
+  width: 1187px;
+  over-flow: hidden;
   top: -29%;
   background-color: #ffffff;
-  border-radius:3px;
-  box-shadow: 0px 9px 29px -8px rgba(0, 0, 0, 0.2);      
+  border-radius: 3px;
+  box-shadow: 0px 9px 29px -8px rgba(0, 0, 0, 0.2);
 
   @media (max-width: 900px) {
-    flex-direction:column;
-    position:relative;
+    flex-direction: column;
+    position: relative;
   }
   @media (max-width: 480px) {
-   width:379px;
-    flex-direction:column;
-    padding:24px;
-    position:relative;
-
+    width: 379px;
+    flex-direction: column;
+    padding: 24px;
+    position: relative;
   }
-
 `;
-
