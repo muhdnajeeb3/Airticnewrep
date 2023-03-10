@@ -7,9 +7,9 @@ import Post from "./post";
 import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
-import HomeScreen from '../pages/HomeScreen'
+import HomeScreen from '../pages/HomeScreen';
 import CourseScreens from "../pages/CourseScreens";
-import 'react-phone-number-input/style.css'
+import 'react-phone-input-2/lib/style.css'
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -48,8 +48,8 @@ const Theme = ({ state }) => {
       {/* Add the header of the site. */}
       <HeadContainer>
         {/* <Header /> */}
-        <HomeScreen />
-        {/* <CourseScreens /> */}
+        {/* <HomeScreen /> */}
+        <CourseScreens />
         
       </HeadContainer>
 
@@ -71,6 +71,8 @@ export default connect(Theme);
 
 const globalStyles = css`
   body {
+// background-color: #faf5ed;
+
     margin: 0;
     padding:0;
     box-sizing: border-box;

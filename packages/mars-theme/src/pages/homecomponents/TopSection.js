@@ -1,6 +1,6 @@
-import { styled } from "frontity";
-import React from "react";
+import React from 'react'
 import { Button, Col, Container, Row } from "react-bootstrap";
+import NavBar from "./NavBar";
 import img1 from "../images/man.png";
 import circleone from "../images/Ellipse 89.png";
 import circletwo from "../images/Ellipse 88.png";
@@ -15,17 +15,18 @@ import s1 from "../images/s1.png";
 import arrow from "../images/Vector.png";
 import play from "../images/Group 997.png";
 import rating from "../images/star 2.png";
-import NavBar from "./NavBar";
-
-
-
-function FirstSection() {
-
-
+import SecondSection from "./SecondSection";
+import ThirdSection from "./ThirdSection";
+import Auxcollabration from "./Auxcollabration";
+import KeyFeatures from "./KeyFeatures";
+import Enrol from "./Enrol";
+import DemoClass from "./DemoClass";
+import { styled } from 'frontity';
+function TopSection() {
   return (
-    <Firstsectionwrapper fluid>
-      <div style={{ position: "relative" }}>
-        <NavBar />
+    <>
+    <div style={{ position: "relative" }}>
+        {/* <NavBar /> */}
         {/* top circles */}
         <div
           style={{
@@ -198,117 +199,11 @@ function FirstSection() {
             </div>
           </Col>
         </RowWrapper>
-      </div>
-      <div>
-        <Row
-          style={{
-            display: "flex",
-            backgroundColor: "#FFFCF6",
-            minHeight: "257px",
-            marginTop: "15rem",
-            position: "relative",
-            justifyContent: "center",
-            
-          }}
-        >
-          {/* arranging to top */}
-          <Div5
-          >
-            <Col style={{ padding: "30px" }}>
-              <Row
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  gap: "-150px",
-                  margin:"10px"
-                }}
-              >
-                <Col>
-                  <StudentImage src={s1} />
-                </Col>
-                <Col style={{ flex: "3 1" }}>
-                  <SPAN3>
-                    A total beginner in coding, this course was the perfect
-                    start! It was easy to understand, and easy to program
-                    (coding wit already?)
-                    <br />
-                    <strong>Rachel Cave - </strong>Ex Student
-                  </SPAN3>
-                </Col>
-              </Row>
-            </Col>
-            <Col style={{ display: "flex" }}>
-              <Col3 >
-                <Bold>35</Bold>
-                <SPAN3>Online Courses</SPAN3>
-              </Col3>
-              <Divider1 />
-              <Col3>
-                <Bold>5k</Bold>
-                <SPAN3>Students</SPAN3>
-              </Col3>
-              <Divider1 />
-              <Col3 >
-                <Bold>
-                  4.5 <img src={rating} alt="" />
-                </Bold>
-                <SPAN3>Rating</SPAN3>
-              </Col3>
-            </Col>
-          </Div5>
-          {/* motivation */}
-          <Row1 >
-          <Col2
-          >
-            <Div4>
-              <img src={m1} alt="" />
-            </Div4>
-            <SPAN2>
-              We'll define, <strong>You'll LEARN</strong>{" "}
-            </SPAN2>
-          </Col2>
-          <Divider></Divider>
-          <Col2 >
-            {/* <Row> */}
-              <Div4>
-                <img src={m2} alt="" />
-              </Div4>
-              <SPAN2>
-                We'll exhibit, <strong>you'll REMEMBER</strong>{" "}
-              </SPAN2>
-            {/* </Row> */}
-          </Col2>
-          <Divider></Divider>
-
-          <Col2>
-            <Div4>
-              <img src={m3} alt="" />
-            </Div4>
-            <SPAN2>
-              We'll motivate <strong> you'll PERFORM</strong>{" "}
-            </SPAN2>
-          </Col2>
-          </Row1>
-        </Row>
-      </div>
-     
-     
-    </Firstsectionwrapper>
-  );
+      </div></>
+  )
 }
 
-export default FirstSection;
-
-// css
-
-const Firstsectionwrapper = styled(Container)`
-  background-color: #faf5ed;
-  // min-height: 732px;
-  // width: 1439px;
-
-  border-radius: 0px;
-  //   position:relative;
-`;
+export default TopSection;
 const RowWrapper =styled(Row)`
 
 @media (max-width: 1024px) {
@@ -513,4 +408,3 @@ const Div5 = styled.div`
   }
 
 `;
-

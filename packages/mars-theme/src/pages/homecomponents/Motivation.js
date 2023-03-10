@@ -1,6 +1,6 @@
-import { styled } from "frontity";
-import React from "react";
+import React from 'react'
 import { Button, Col, Container, Row } from "react-bootstrap";
+import NavBar from "./NavBar";
 import img1 from "../images/man.png";
 import circleone from "../images/Ellipse 89.png";
 import circletwo from "../images/Ellipse 88.png";
@@ -15,191 +15,17 @@ import s1 from "../images/s1.png";
 import arrow from "../images/Vector.png";
 import play from "../images/Group 997.png";
 import rating from "../images/star 2.png";
-import NavBar from "./NavBar";
-
-
-
-function FirstSection() {
-
-
+import SecondSection from "./SecondSection";
+import ThirdSection from "./ThirdSection";
+import Auxcollabration from "./Auxcollabration";
+import KeyFeatures from "./KeyFeatures";
+import Enrol from "./Enrol";
+import DemoClass from "./DemoClass";
+import { styled } from 'frontity';
+function Motivation() {
   return (
-    <Firstsectionwrapper fluid>
-      <div style={{ position: "relative" }}>
-        <NavBar />
-        {/* top circles */}
-        <div
-          style={{
-            position: "absolute",
-            right: "0",
-            top: "0",
-            width: "400px",
-            height: "300px",
-            left: "",
-          }}
-        >
-          <img
-            src={circleone}
-            alt=""
-            style={{
-              width: "343px",
-              height: "auto",
-              objectFit: "cover",
-              position: "absolute",
-              left: "57%",
-              top: "78%",
-              transform: "translate(-50%,-50%)",
-            }}
-          />
-          <img
-            src={circletwo}
-            alt=""
-            style={{
-              width: "228px",
-              height: "auto",
-              objectFit: "cover",
-              position: "absolute",
-              left: "72%",
-              top: "75%",
-              transform: "translate(-50%,-50%)",
-            }}
-          />
-          <img
-            src={circlethree}
-            alt=""
-            style={{
-              width: "139px",
-              height: "auto",
-              objectFit: "cover",
-              position: "absolute",
-              left: "83%",
-              top: "71%",
-              transform: "translate(-50%,-50%)",
-            }}
-          />
-        </div>
-        {/* bottom lines */}
-        <div
-          style={{
-            position: "absolute",
-            left: "0",
-            bottom: "137px",
-            width: "auto",
-            height: "auto",
-            right: "",
-          }}
-        >
-          <img
-            src={l1}
-            alt=""
-            style={{
-              width: "35px",
-              height: "auto",
-              objectFit: "cover",
-              position: "absolute",
-              left: "57%",
-              top: "78%",
-              transform: "translate(-1%,-60%)",
-            }}
-          />
-          <img
-            src={l2}
-            alt=""
-            style={{
-              width: "84px",
-              height: "auto",
-              objectFit: "cover",
-              position: "absolute",
-              left: "72%",
-              top: "75%",
-              transform: "translate(-1%,-33%)",
-            }}
-          />
-          <img
-            src={l3}
-            alt=""
-            style={{
-              width: "84px",
-              height: "auto",
-              objectFit: "cover",
-              position: "absolute",
-              left: "83%",
-              top: "71%",
-              transform: "translate(-1%,-8%)",
-            }}
-          />
-        </div>
-        <RowWrapper
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            flexDirection: "row",
-          }}
-        >
-          <Col style={{ flex: " 1" }}>
-            <Row>
-              <SPAN>
-                Upgrade your <span style={{ color: "#FCAF17" }}>Skills</span>
-                <br /> in the industry of the
-                 Future
-              </SPAN>
-            </Row>
-            <Row>
-              <Paragraph>
-                If you are pursuing a career in technology, it is high time to
-                update your skills and prepare for your next opportunity.
-              </Paragraph>
-            </Row>
-            <Div3
-              
-            >
-              <Col1
-              >
-                <Button
-                  variant="dark"
-                  style={{
-                    borderRadius: "0",
-                    color: "#FCAF17",
-                    width: "168px",
-                    minHeight: "68px",
-                    fontFamily: "mons",
-                    marginTop: "20px",
-                  }}
-                >
-                  Get Started{" "}
-                  <img src={arrow} alt="" width="27" height="13px" />
-                </Button>
-                <Col
-                  style={{
-                    width: "",
-                    display: "flex",
-                    justifyItems: "center",
-                    gap: "10px",
-                  }}
-                >
-                  <img src={play} alt="" />
-                  <Word>How it Works</Word>
-                </Col>
-              </Col1>
-            </Div3>
-          </Col>
-          <Col>
-            <div
-              style={{
-                zIndex: "113",
-                position: "relative",
-                overflow: "hidden",
-              }}
-            >
-              <Images
-                src={img1}
-                alt=""
-                
-              />
-            </div>
-          </Col>
-        </RowWrapper>
-      </div>
-      <div>
+    <>
+     <div>
         <Row
           style={{
             display: "flex",
@@ -291,24 +117,11 @@ function FirstSection() {
           </Row1>
         </Row>
       </div>
-     
-     
-    </Firstsectionwrapper>
-  );
+    </>
+  )
 }
 
-export default FirstSection;
-
-// css
-
-const Firstsectionwrapper = styled(Container)`
-  background-color: #faf5ed;
-  // min-height: 732px;
-  // width: 1439px;
-
-  border-radius: 0px;
-  //   position:relative;
-`;
+export default Motivation;
 const RowWrapper =styled(Row)`
 
 @media (max-width: 1024px) {
@@ -513,4 +326,3 @@ const Div5 = styled.div`
   }
 
 `;
-

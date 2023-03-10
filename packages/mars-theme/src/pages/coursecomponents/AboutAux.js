@@ -1,8 +1,13 @@
 import { styled } from "frontity";
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import certificate from "../courseimages/certificate.png";
 function AboutAux() {
+  const [zoomed, setZoomed] = useState(false);
+  const handleClick = () =>  {
+    setZoomed(!zoomed);
+  }
+  
   return (
     <Wrapper fluid>
       <Row1>
@@ -29,7 +34,9 @@ function AboutAux() {
           </Row2>
         </Col1>
         <Col2>
-          <Image src={certificate} alt="" />
+          <Image style={{transform:zoomed ? 'scale(1.2)' : ''}} src={certificate} alt="" />
+          <br />
+          <SPAN4 onClick={handleClick}>Click to Zoom</SPAN4>
         </Col2>
       </Row1>
     </Wrapper>
@@ -116,6 +123,22 @@ const SPAN3 = styled.span`
   text-transform: capitalize;
 
   color: #303030;
+`;
+const SPAN4 =styled.span`
+font-family: 'Metropolis';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 28px;
+/* identical to box height, or 175% */
+display:flex;
+justify-content:center;
+text-decoration-line: underline;
+text-transform: capitalize;
+text-align:center;
+z-index:11;
+color: #283A83;
+position:relative;
 `;
 // image
 

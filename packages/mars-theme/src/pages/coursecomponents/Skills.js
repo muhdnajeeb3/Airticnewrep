@@ -279,6 +279,10 @@ const Row2 = styled(Row)`
   @media (max-width: 700px) {
     justify-content: center;
   }
+  @media(max-width:480px){
+    width:100%;
+    
+    }
 `;
 const Row3 = styled(Row)`
   width: 83%;
