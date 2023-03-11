@@ -49,9 +49,10 @@ const Wrapper = styled(Container)`
   min-height: 28rem;
 `;
 const Row1 = styled(Row)`
-  max-width: 90%;
-  margin-left: auto;
-  // margin-right:auto;
+max-width: 83%;
+margin-left: auto;
+margin-right: auto;
+padding-top: 4rem;
   display: flex;
   margin-top: 6rem;
   @media (max-width: 1368px) {

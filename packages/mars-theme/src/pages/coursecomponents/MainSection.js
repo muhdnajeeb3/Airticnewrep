@@ -3,6 +3,7 @@ import Footer from '../homecomponents/Footer';
 import AboutAux from './AboutAux'
 import CareerSupport from './CareerSupport';
 import CourseModules from './CourseModules';
+import CourseOverview from './CourseOverview';
 import Enquiry from './Enquiry';
 
 import Questions from './Questions';
@@ -12,6 +13,7 @@ import StudentReview from './StudentReview';
 function MainSection() {
   return (
     <>
+    <CourseOverview />
     <AboutAux />
     <Skills />
     <CourseModules />
