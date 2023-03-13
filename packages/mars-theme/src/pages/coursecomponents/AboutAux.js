@@ -49,7 +49,7 @@ const Wrapper = styled(Container)`
   min-height: 28rem;
 `;
 const Row1 = styled(Row)`
-max-width: 83%;
+max-width: 85%;
 margin-left: auto;
 margin-right: auto;
 padding-top: 4rem;
@@ -140,6 +140,7 @@ text-align:center;
 z-index:11;
 color: #283A83;
 position:relative;
+cursor:pointer;
 `;
 // image
 

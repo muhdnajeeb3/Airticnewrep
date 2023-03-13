@@ -85,11 +85,15 @@ function Enquiry() {
                 <Row3>
                     <SPAN1>Quick Enquiry</SPAN1>
                     <br />
+                    {/* <form> */}
+
                     <Input type="text" placeholder='Name'/>
                     <Input type="email" placeholder='Course'/>
                     <Input type="email" placeholder='Email'/>
                     <Input type="email" placeholder='Phone number'/>
+                    
                     <Row4><Buttons variant='warning'>Submit</Buttons></Row4>
+                    {/* </form> */}
                     
                 </Row3>
                 

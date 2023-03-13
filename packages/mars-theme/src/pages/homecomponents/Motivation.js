@@ -15,12 +15,6 @@ import s1 from "../images/s1.png";
 import arrow from "../images/Vector.png";
 import play from "../images/Group 997.png";
 import rating from "../images/star 2.png";
-import SecondSection from "./SecondSection";
-import ThirdSection from "./ThirdSection";
-import Auxcollabration from "./Auxcollabration";
-import KeyFeatures from "./KeyFeatures";
-import Enrol from "./Enrol";
-import DemoClass from "./DemoClass";
 import { styled } from 'frontity';
 function Motivation() {
   return (

@@ -12,6 +12,7 @@ import clocktime from "../images/clock.png";
 import learning from "../images/learning.png";
 import LeftArrow from "./LeftArrow";
 import RightArrow from "./RightArrow";
+import Link from "@frontity/components/link";
 
 function CardSlider() {
   const settings = {
@@ -55,11 +56,13 @@ function CardSlider() {
       <Row2>
         <Sliderwrapper {...settings}>
         <Card
-            style={{ width: "18rem",borderRadius:"0px"}}
+            style={{ width: "18rem",borderRadius:"0px",cursor:'pointer'}}
             css={css`
               border-radius:0
             `}
+            
           >
+            <Link link='/coursedetails'>
             <Card.Img variant="top" src={study} css={css`padding:10px`}/>
             <Card.Body>
               <Card.Title>
@@ -98,6 +101,7 @@ function CardSlider() {
                 </Row>
               </Card.Text>
             </Card.Body>
+            </Link>
           </Card>
           <Card
             style={{ width: "18rem",borderRadius:"0px"}}

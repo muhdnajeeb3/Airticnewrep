@@ -18,9 +18,11 @@
   },
   "prettier": {},
   "dependencies": {
+    "@aamodtgroup/frontity-contact-form-7": "^1.0.1",
     "@frontity/core": "^1.16.0",
     "@frontity/html2react": "^1.7.0",
     "@frontity/mars-theme": "./packages/mars-theme",
+    "@frontity/router": "^1.3.0",
     "@frontity/tiny-router": "^1.4.4",
     "@frontity/wp-source": "^1.11.7",
     "bootstrap": "^5.2.3",

@@ -12,11 +12,22 @@ import calender from "../courseimages/Calander icon.png";
 import time from "../courseimages/Duration icon.png";
 import learning from "../courseimages/blended learning icon.png";
 import fees from "../courseimages/fees icon.png";
+import e1 from "../courseimages/Ellipse 45.png";
+import e2 from "../courseimages/Ellipse 46.png";
+import e3 from "../courseimages/Ellipse 47.png";
+import e4 from "../courseimages/Ellipse 48.png";
+import e5 from "../courseimages/Ellipse 49.png";
+import layer from "../courseimages/layerg.png";
 
 function CourseOverview() {
   return (
     <>
       <Wrapper1 fluid>
+        {/* toplayer */}
+        {/* <div style={{position:'absolute',top:'0%',right:'0%',transform: 'translate(0%, 7%)'}}>
+          <img src={layer} alt="" style={{maxWidth:'930px'}}/>
+         
+        </div> */}
         <NavBar coursepage={true} />
         <Row7>
           <Col4>
@@ -260,7 +271,8 @@ export default CourseOverview;
 const Wrapper1 = styled(Container)`
   min-height: 698px;
   background: #36374d;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
+  position:relative;
 `;
 const Wrapper2 = styled(Container)`
   min-height: 493.17px;
@@ -499,6 +511,8 @@ const SPAN12 = styled.span`
 `;
 const SPAN13 = styled.span``;
 const Image3 = styled.img`
+position:relative;
+z-index:1;
   @media (max-width: 640px) {
     width: 100%;
   }

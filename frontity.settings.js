@@ -23,8 +23,11 @@ const settings = {
             "showOnList": false,
             "showOnPost": false
           }
-        }
+        },
+        
+        
       }
+      
     },
     {
       "name": "@frontity/wp-source",
@@ -35,8 +38,24 @@ const settings = {
       }
     },
     "@frontity/tiny-router",
-    "@frontity/html2react"
-  ]
+    "@frontity/html2react",
+    "@aamodtgroup/frontity-contact-form-7" 
+
+  ],
+  libraries: {
+    source: {
+      // Replace "example.com" with the URL of your WordPress site
+      api: "https://example.com/wp-json",
+      params: {
+        // ...
+      },
+      // Define your custom routes here
+      post: {
+        path: "/coursedetails/",
+        endpoint: "coursedetails"
+      }
+    }
+  }
 };
 
 export default settings;

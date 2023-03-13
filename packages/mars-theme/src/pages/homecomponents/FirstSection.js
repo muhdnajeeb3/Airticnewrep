@@ -37,18 +37,9 @@ function FirstSection() {
             left: "",
           }}
         >
-          <img
+          <Image1
             src={circleone}
             alt=""
-            style={{
-              width: "343px",
-              height: "auto",
-              objectFit: "cover",
-              position: "absolute",
-              left: "57%",
-              top: "78%",
-              transform: "translate(-50%,-50%)",
-            }}
           />
           <img
             src={circletwo}
@@ -58,7 +49,7 @@ function FirstSection() {
               height: "auto",
               objectFit: "cover",
               position: "absolute",
-              left: "72%",
+              left: "74.4%",
               top: "75%",
               transform: "translate(-50%,-50%)",
             }}
@@ -71,7 +62,7 @@ function FirstSection() {
               height: "auto",
               objectFit: "cover",
               position: "absolute",
-              left: "83%",
+              left: "85.7%",
               top: "71%",
               transform: "translate(-50%,-50%)",
             }}
@@ -188,6 +179,7 @@ function FirstSection() {
                 zIndex: "113",
                 position: "relative",
                 overflow: "hidden",
+                left:'1%'
               }}
             >
               <Images
@@ -513,4 +505,17 @@ const Div5 = styled.div`
   }
 
 `;
+const Image1 =styled.img`
+width: 343px;
+height: auto;
+object-fit: cover;
+position: absolute;
+left: 60%;
+top: 78%;
+transform: translate(-50%,-50%);
+@media(max-width:350px){
+  width: 308px;
+left: 64%;
 
+}
+`;
