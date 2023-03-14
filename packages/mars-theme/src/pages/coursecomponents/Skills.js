@@ -257,7 +257,6 @@ const Wrapper3 = styled(Container)`
 const Wrapper4 = styled(Container)`
   background: #f7fbff;
   min-height: 420px;
-  max-width: 1440px;
   padding-bottom:5rem;
 `;
 const Row1 = styled(Row)`
@@ -295,6 +294,10 @@ const Row3 = styled(Row)`
   top: -26%;
   display: flex;
   flex-wrap: wrap;
+  @media (min-width: 1458px) {
+    max-width: 1456px;
+
+  }
 
   @media (max-width: 750px) {
     flex-direction: column;
@@ -311,6 +314,10 @@ const Row5 = styled(Row)`
   width: 83%;
   margin-left: auto;
   margin-right: auto;
+  @media (min-width: 1458px) {
+    max-width: 1456px;
+
+  }
 
 `;
 const Row6 = styled(Row)`
@@ -318,6 +325,10 @@ const Row6 = styled(Row)`
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
+  @media (min-width: 1458px) {
+    max-width: 1456px;
+
+  }
 
   @media (max-width: 800px) {
     display: flex;
@@ -332,6 +343,10 @@ const Row7 = styled(Row)`
   margin-left: auto;
   margin-right: auto;
   margin-top: 6rem;
+  @media (min-width: 1458px) {
+    max-width: 1456px;
+
+  }
   @media(max-width:480px){
     width:100%;
     display: flex;
@@ -369,6 +384,7 @@ const Row10 = styled(Row)`
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  
   @media(max-width:480px){
     max-width:100%;
     display: flex;

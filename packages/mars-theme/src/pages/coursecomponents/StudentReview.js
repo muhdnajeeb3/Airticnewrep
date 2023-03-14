@@ -171,7 +171,6 @@ function StudentReview() {
 export default StudentReview;
 const Wrapper = styled(Container)`
   background: #f7fbff;
-  max-width: 1440px;
   min-height: 793.62px;
   @media (max-width: 430px) {
     min-height: 993.62px;
@@ -179,7 +178,6 @@ const Wrapper = styled(Container)`
 `;
 const Wrapper1 = styled(Container)`
   background: #ffffff;
-  max-width: 1440px;
   //   min-height: 793.62px;
   //   @media(max-width:430px){
   //     min-height: 993.62px;
@@ -206,6 +204,8 @@ const Sliderwrapper = styled(Slider)`
 const Row1 = styled(Row)`
   background: #f7fbff;
   max-width: 1440px;
+  margin-left:auto;
+  margin-right:auto;
   // min-height:693.62px;
 `;
 const Row2 = styled(Row)`
@@ -226,6 +226,10 @@ const Row5 = styled(Row)`
   padding-top: 3rem;
   margin-left: auto;
   margin-right: auto;
+  @media (min-width: 1458px) {
+    max-width: 1456px;
+
+  }
 `;
 const Row6 = styled(Row)`
   width: 83%;
@@ -237,6 +241,10 @@ const Row6 = styled(Row)`
   display: flex;
   gap: 5rem;
   flex-wrap: wrap;
+  @media (min-width: 1458px) {
+    max-width: 1456px;
+
+  }
   @media (max-width: 430px) {
     padding-left: 25px;
   }

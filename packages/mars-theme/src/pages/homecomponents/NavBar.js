@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Logo from "../images/LOGO.png";
 import Logo2 from "../images/airtics.png";
 import { Button } from "react-bootstrap";
-function NavBar({ coursepage }) {
+function NavBar({ coursepage, about }) {
   const [mobile, setMobile] = useState(0);
   useEffect(() => {
     const handleResize = () => {
@@ -23,8 +23,8 @@ function NavBar({ coursepage }) {
   }, []);
   return (
     <>
-      <NavbarWrapper bg="" expand="lg" cp={coursepage ? 'true' : 'false'}>
-        <Container style={{display:"flex",justifyContent:"space-between"}}>
+      <NavbarWrapper bg="" expand="lg" cp={coursepage ? "true" : "false"}>
+        <Container style={{ display: "flex", justifyContent: "space-between" }}>
           <Navbar.Brand
             href="/"
             style={{ display: "flex", justifyContent: "flex-start" }}
@@ -41,6 +41,12 @@ function NavBar({ coursepage }) {
                 alt="Logo"
                 style={{ width: "166px", height: "52px" }}
               />
+            ) : about ? (
+              <Image
+                src={Logo2}
+                alt="Logo"
+                style={{ width: "166px", height: "52px" }}
+              />
             ) : (
               <Image
                 src={Logo}
@@ -48,43 +54,64 @@ function NavBar({ coursepage }) {
                 style={{ width: "166px", height: "52px" }}
               />
             )}
+
             {/* <Image  alt="Logo"  style={{width:"166px",height:"52px"}}/> */}
           </Navbar.Brand>
           <StyledNavbarToggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto" style={{display:"flex",justifyContent:"space-between",marginLeft:'auto'}} >
-              <Nav.Link href="/" >
-                <SPAN1 style={{ color: coursepage ? "#ffffff" : "" }}>
+            <Nav
+              className="me-auto"
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginLeft: "auto",
+              }}
+            >
+              <Nav.Link href="/">
+                <SPAN1 style={{ color: coursepage ? "#ffffff" : about ? '#ffffff' : '' }}>
                   Home
                 </SPAN1>
               </Nav.Link>
               <Nav.Link href="/about">
-                <SPAN1 style={{ color: coursepage ? "#ffffff" : "" }}>
+                <SPAN1 style={{ color: coursepage ? "#ffffff" : about ? '#ffffff' : '' }}>
                   About
                 </SPAN1>
               </Nav.Link>
               <Nav.Link href="/about" style={{ color: "black" }}>
-                <SPAN1 style={{ color: coursepage ? "#ffffff" : "" }}>
+                <SPAN1 style={{ color: coursepage ? "#ffffff" : about ? '#ffffff' : '' }}>
                   Our Programs
                 </SPAN1>
               </Nav.Link>
               <Nav.Link href="/about">
-                <SPAN1 style={{ color: coursepage ? "#ffffff" : "" }}>
+                <SPAN1 style={{ color: coursepage ? "#ffffff" : about ? '#ffffff' : '' }}>
                   Blogs
                 </SPAN1>
               </Nav.Link>
-              {coursepage ? (
-                <>
-                
-              <Nav.Link href="/about">
-                <SPAN1 style={{ color: coursepage ? "#ffffff" : "" }}>
-                Coding Challenge '22
+              {
+                about ? (
+                  <>
+                  <Nav.Link href="/about">
+                <SPAN1 style={{ color: coursepage ? "#ffffff" : about ? '#ffffff' : '' }}>
+                Million Corders
                 </SPAN1>
               </Nav.Link>
-              <Button1><SPAN2>Contact Us</SPAN2></Button1>
-
+                  </>
+                ) : ''
+              }
+              {coursepage ? (
+                <>
+                  <Nav.Link href="/about">
+                    <SPAN1 style={{ color: coursepage ? "#ffffff" : "" }}>
+                      Coding Challenge '22
+                    </SPAN1>
+                  </Nav.Link>
+                  <Button1>
+                    <SPAN2>Contact Us</SPAN2>
+                  </Button1>
                 </>
-              ) : ''}
+              ) : (
+                ""
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -100,10 +127,10 @@ const NavbarWrapper = styled(Navbar)`
   min-height: 5rem;
   padding-left: 50px;
   z-index: 11110;
-  @media(min-width:1025px){
-    width:${(props) => (props.cp === 'true' ? "90%" : "")};
-  margin-left:${(props) => (props.cp === 'true' ? "auto" : "")};
-  margin-right:${(props) => (props.cp === 'true' ? "auto" : "")};
+  @media (min-width: 1025px) {
+    width: ${(props) => (props.cp === "true" ? "90%" : "")};
+    margin-left: ${(props) => (props.cp === "true" ? "auto" : "")};
+    margin-right: ${(props) => (props.cp === "true" ? "auto" : "")};
   }
 
   @media (max-width: 1024px) {
@@ -144,25 +171,22 @@ const SPAN1 = styled.span`
   }
 `;
 const SPAN2 = styled.span`
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 21px;
-/* identical to box height */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
 
-
-color: #FFFFFF;
-
+  color: #ffffff;
 `;
-const Button1 =styled(Button)`
-border: 1px solid #F8AC17;
-background: transparent;
-border-radius: 8px;
-max-width:118.14px;
-min-height:40px;
-margin-left:10px;
-
+const Button1 = styled(Button)`
+  border: 1px solid #f8ac17;
+  background: transparent;
+  border-radius: 8px;
+  max-width: 118.14px;
+  min-height: 40px;
+  margin-left: 10px;
 `;
 const StyledNavbarToggle = styled(Navbar.Toggle)`
   @media (max-width: 1024px) {

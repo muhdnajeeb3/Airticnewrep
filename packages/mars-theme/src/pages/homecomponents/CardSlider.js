@@ -344,6 +344,11 @@ const Sliderwrapper = styled(Slider)`
   .slick-slide {
     margin: 10px 7px;
   }
+  @media(min-width:680px)and(max-width:770px){
+    .slick-list {
+          margin: 0 -40px;
+        }
+  }
   .slick-track {display:flex;}
   /* the parent */
 //   .slick-list {

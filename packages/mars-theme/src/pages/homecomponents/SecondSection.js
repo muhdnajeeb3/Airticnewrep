@@ -29,7 +29,9 @@ function SecondSection() {
   }
 
   return (
-    <Container>
+    <Container fluid>
+      <RowMain>
+
         <Row style={{marginTop:"4rem",marginBottom:"4rem"}} >
           <SPAN1>Our Courses</SPAN1>
         </Row>
@@ -46,6 +48,7 @@ function SecondSection() {
         </Row1>
         {/* <SliderCarousel /> */}
         <CardSlider />
+      </RowMain>
     </Container>
   )
 }
@@ -59,6 +62,17 @@ display: flex;
 margin-left: 1rem;
 @media(max-width:480px){
   margin-left:0;
+}
+
+`;
+const RowMain = styled(Row)`
+width: 90%;
+display: flex;
+margin-left: auto;
+margin-right: auto;
+@media(max-width:750px){
+width: 100%;
+
 }
 
 `;

@@ -286,15 +286,21 @@ const Wrapper4 = styled(Container)`
 `;
 const Row1 = styled(Row)`
   width: 83%;
+  
   margin-left: auto;
   margin-right: auto;
   padding-top: 3rem;
   @media (max-width: 480px) {
     width: 100%;
   }
+  @media (min-width: 1458px) {
+    max-width: 1456px;
+
+  }
 `;
 const Row2 = styled(Row)`
   background: #ffffff;
+  
   box-shadow: 0px 10px 21px -5px rgba(196, 204, 214, 0.48);
   border-radius: 3px;
   border-top: 3.07px solid #383b41;
@@ -309,16 +315,25 @@ const Row2 = styled(Row)`
     width: 100%;
     flex-direction: column;
   }
+  @media (min-width: 1458px) {
+    max-width: 1456px;
+
+  }
 `;
 const Row3 = styled(Row)`
   width: 83%;
   margin-left: auto;
   margin-right: auto;
+  
   display: flex;
   padding-top: 3rem;
   gap: 10px;
   @media (max-width: 480px) {
     width: 100%;
+  }
+  @media (min-width: 1458px) {
+    max-width: 1456px;
+
   }
 `;
 const Row4 = styled(Row)`
@@ -356,9 +371,6 @@ const Row9 = styled(Row)`
   border-radius: 6px;
   border-bottom: 3.29px solid #fcaf17;
   position: absolute;
-  //   display: flex;
-  //   padding-top: 3rem;
-  //   gap: 10px;
     @media (max-width: 870px) {
       flex-direction:column;
       display:flex;
@@ -421,6 +433,10 @@ const Row7 = styled(Row)`
   display: flex;
   padding-top: 3rem;
   gap: 10px;
+  @media (min-width: 1458px) {
+    max-width: 1456px;
+
+  }
   @media (max-width: 1025px) {
     margin-top: 5rem;
   }

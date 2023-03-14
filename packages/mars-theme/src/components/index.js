@@ -10,6 +10,7 @@ import PageError from "./page-error";
 import HomeScreen from "../pages/HomeScreen";
 import CourseScreens from "../pages/CourseScreens";
 import "react-phone-input-2/lib/style.css";
+import About from "../pages/About";
 
 /**
 
@@ -48,16 +49,15 @@ const Theme = ({ state }) => {
         />
       </Head>
 
-      {/* Add some global styles for the whole site, like body or a's. 
-      Not classes here because we use CSS-in-JS. Only global HTML tags. */}
       <Global styles={globalStyles} />
-      {state.router.link === "/" && <HomeScreen />}
+      {/* {state.router.link === "/" && <HomeScreen />} */}
 
       {/* Add the header of the site. */}
       <HeadContainer>
         {/* <Header /> */}
         {/* <HomeScreen /> */}
         {/* <CourseScreens /> */}
+        <About />
         
       </HeadContainer>
 
@@ -70,7 +70,7 @@ const Theme = ({ state }) => {
           <Post when={data.isPostType} />
           <PageError when={data.isError} /> */}
         {/* <HomeScreen when={data.route === '/'}/> */}
-          <CourseScreens when={data.route === '/coursedetails/'} />
+          {/* <CourseScreens when={data.route === '/coursedetails/'} /> */}
         </Switch>
       </Main>
     </>
