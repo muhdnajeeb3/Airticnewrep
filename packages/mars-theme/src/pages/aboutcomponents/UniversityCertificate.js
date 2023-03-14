@@ -2,6 +2,12 @@ import { styled } from 'frontity';
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import isc from '../aboutimages/Group 739.png';
+import job from '../aboutimages/Group 740.png';
+import ifie from '../aboutimages/Group 742.png';
+import lvt from '../aboutimages/Group 743.png';
+import bl from '../aboutimages/Group 744.png';
+import ft from '../aboutimages/Group 745.png';
+import ls from '../aboutimages/Group 746.png';
 function UniversityCertificate() {
   return (
     <Wrapper1 fluid>
@@ -18,26 +24,26 @@ function UniversityCertificate() {
         <Row2>
         <Col1>
             <Image src={isc} />
-            <SPAN3>Machine Learning</SPAN3>
+            <SPAN3>Industry-standard curriculum</SPAN3>
           </Col1>
           <Col1>
-            <Image src={isc} />
-            <SPAN3>Machine Learning</SPAN3>
+            <Image src={job} />
+            <SPAN3>Job-ready short courses</SPAN3>
           </Col1><Col1>
-            <Image src={isc} />
-            <SPAN3>Machine Learning</SPAN3>
+            <Image src={ifie} />
+            <SPAN3>Learn from industry experts</SPAN3>
           </Col1><Col1>
-            <Image src={isc} />
-            <SPAN3>Machine Learning</SPAN3>
+            <Image src={lvt} />
+            <SPAN3>Live virtual training</SPAN3>
           </Col1><Col1>
-            <Image src={isc} />
-            <SPAN3>Machine Learning</SPAN3>
+            <Image src={bl} />
+            <SPAN3>Blended learning</SPAN3>
           </Col1><Col1>
-            <Image src={isc} />
-            <SPAN3>Machine Learning</SPAN3>
+            <Image src={ft} />
+            <SPAN3>Flexible timing</SPAN3>
           </Col1><Col1>
-            <Image src={isc} />
-            <SPAN3>Machine Learning</SPAN3>
+            <Image src={ls} />
+            <SPAN3>24x7 learning support</SPAN3>
           </Col1>
         </Row2>
 
@@ -75,7 +81,9 @@ justify-content:center;
 display:flex;
 flex-wrap: wrap;
   gap: 50px;
-
+@media(max-width:700px){
+  padding-bottom:2rem;
+}
 `;
 
 //span
@@ -125,11 +133,14 @@ const Col1 = styled(Col)`
   max-width: 221.13px;
   height: 194.77px;
   background: #ffffff;
-  box-shadow: 0px 12px 16px -6px rgba(208, 214, 222, 0.25);
-  border-radius: 12px;
+  background: #FFFFFF;
+border: 1px solid #EFEFEF;
+box-shadow: 0px 17px 13px -14px rgba(203, 203, 203, 0.26);
+border-radius: 15px;
   position: relative;
   &:hover {
-    background: #fcaf17;
+    // background: #fcaf17;
+    border-bottom:4px solid #FCAF17;
   }
 `;
 const Image = styled.img`

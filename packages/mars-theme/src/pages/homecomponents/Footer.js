@@ -2,9 +2,9 @@ import { styled } from "frontity";
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import airtics from "../images/airtics.png";
-function Footer() {
+function Footer({about}) {
   return (
-    <Wrapper fluid>
+    <Wrapper fluid about={about ? 'true' : 'false'}>
       <Row1>
         <Cols>
           <Div>
@@ -58,7 +58,8 @@ export default Footer;
 // css
 const Wrapper = styled(Container)`
   min-height: 394px;
-  background: #31353a;
+  background: ${(props) => (props.about === "true" ? "#36374D" : "#31353a")};;
+  // 
 //   margin-top: 5rem;
 `;
 const Row1 = styled(Row)`
